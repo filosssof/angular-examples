@@ -61,9 +61,7 @@
 	overflow:hidden;
 	border: 1px solid #efefef;
 	padding:10px;
-	background-image:url(img/corn.jpg);
-	background-repeat:no-repeat;
-	background-position: right bottom;
+	background: url(img/corn.jpg) no-repeat right bottom;
 }
 
 .rss .tile span{
