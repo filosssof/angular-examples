@@ -52,8 +52,6 @@
 			}
 
 		}
-		
-		
 
 		function aiMove(arr, xSteps){
 			var stepNum = xSteps.length;
