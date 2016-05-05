@@ -1,0 +1,9 @@
+<div ng-show="todoctrl.show_form">
+	<h2>Add new scope </h2>
+	<md-input-container>
+        <label>Enter your scope</label>
+        <input ng-model="todoctrl.scope" >
+      </md-input-container>
+      <md-datepicker ng-model="todoctrl.tillDate"></md-datepicker>
+	<md-button class="menu-button md-raised" ng-click="todoctrl.submitScope()">Submit scope</md-button>
+</div>

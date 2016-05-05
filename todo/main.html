@@ -1,0 +1,29 @@
+<h1 class="md-display-2">Simple TODO ng app</h1>
+
+<h2 class="md-display-3"></h2>
+
+<div ng-include src="'todo/add.html'"></div>
+
+<div>
+	<div layout="row">
+		<div flex class="md-title">Scope</div>
+		<div flex="10" class="md-title">Till date</div>
+		<div flex="10" class="md-title">Is reached?</div>
+		<div flex="10" class="md-title">
+			<span ng-click="todoctrl.show_add()" class="material-icons controls">add</span>
+		</div>
+	</div>
+	<div layout="row" ng-repeat="todo in todoctrl.todos track by $index">
+		<div flex ng-class="{true:'striked', false:'simple'}[todo.reached]">{{todo.name}}</div>
+		<div flex="10">
+			{{todo.tillDate | date:'dd/MM/yyyy'}} 
+		</div>
+		<div flex="10">
+			<md-checkbox ng-model="todo.reached" aria-label="Is reached" ng-change="todoctrl.changeState(todo.name,todo.reached)"></md-checkbox>
+		</div>
+		<div flex="10">
+			<span ng-click="todoctrl.deleteScope(todo.name)"
+				class="material-icons controls">clear</span>
+		</div>
+	</div>
+</div>

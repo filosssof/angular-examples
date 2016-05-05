@@ -1,0 +1,24 @@
+<md-toolbar ng-controller="NavController as nav">
+      <div class="md-toolbar-tools">
+        <h2>
+          <span>Set of examples on Angular JS</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-raised" aria-label="ToDo List" ng-click="nav.goToPage('todo')">
+          ToDo List
+        </md-button>
+        
+        <md-button class="md-raised" aria-label="Calculator" ng-click="nav.goToPage('calc')">
+          Calculator
+        </md-button>
+        
+        <md-button class="md-raised" aria-label="XO Game" ng-click="nav.goToPage('xo')">
+          XO game
+        </md-button>
+        
+       <md-button class="md-raised" aria-label="RSS Feed" ng-click="nav.goToPage('rss')">
+          RSS feed
+        </md-button>
+        
+      </div>
+</md-toolbar>

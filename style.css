@@ -1,0 +1,78 @@
+/*TODO*/
+.controls {
+	cursor: pointer;
+}
+
+.striked {
+	text-decoration: line-through;
+}
+
+.simple {
+	text-decoration: none;
+}
+
+.critical {
+	font-weight: bold;
+	color: #E00;
+}
+
+/*calculator*/
+.calculator{
+	width:250px;
+	border:1px solid #22E;
+	padding:25px;
+}
+
+.calculator .display{
+	text-align:right;
+}
+
+
+/*XO game*/
+.xo-container{
+	width:200px;
+}
+
+.xo-container .cell{
+	padding:15px;
+	border:1px solid #ccc;
+	width:80px;
+	height:80px;	
+	cursor:pointer;
+	text-align: center;
+	font-size:3em;
+	font-weight:bolder;
+}
+
+.xo-container .cell.X{
+	color:#811;
+}
+.xo-container .cell.O{
+	color:#118;
+}
+
+/*RSS*/
+.rss .num_posts{
+	width:40px;
+	float:left;
+}
+
+.rss .tile{
+	overflow:hidden;
+	border: 1px solid #efefef;
+	padding:10px;
+	background-image:url(img/corn.jpg);
+	background-repeat:no-repeat;
+	background-position: right bottom;
+}
+
+.rss .tile span{
+	padding:15px;
+}
+.rss .tile span img{
+	display:none;
+}
+
+.rss .tile span > div:first-of-type {
+	display:none;
+}

@@ -1,0 +1,26 @@
+<h1 md-display="3">RSS Feeder</h1>
+
+
+
+<md-input-container flex="15">
+     <md-checkbox ng-model="rss.origin.cnn" aria-label="CNN">CNN</md-checkbox>
+     <md-checkbox ng-model="rss.origin.reuters" aria-label="Reuters">Reuters</md-checkbox>
+     <md-checkbox ng-model="rss.origin.bbc" aria-label="BBC">BBC</md-checkbox>
+     <input ng-model="rss.numPosts" type="number" step="1" min="1" max="30">
+     <md-button ng-click="rss.load()">Load Entries</md-button>
+ </md-input-container>
+
+<md-content layout-padding class="rss"> 
+
+<md-grid-list md-cols="3" md-gutter="1em" md-row-height="2:1"> 
+	<md-grid-tile ng-repeat="entry in rss.entries" class="tile">
+		<md-tile-content>
+		
+		<h2 class="md-headline"><a href="{{entry.link}} target="_blank">{{entry.title}}</a></h2>
+		<span class="md-body-1" ng-bind-html="entry.content"></span>
+		
+		</md-tile-content>
+	</md-grid-tile>
+</md-grid-list> 
+
+</md-content>

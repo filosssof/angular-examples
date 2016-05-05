@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>TODO list</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.7/angular-material.min.css">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Optional theme -->
+</head>
+<body ng-app="app">
+<div ng-include src="'navigation/nav.tmpl.html'"></div>
+	<div ng-view></div>
+	<script	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+	<script	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.js"></script>
+	<script	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-sanitize.js"></script>
+	
+	<script	src="bower_components/angular-aria/angular-aria.js"></script>
+	<script	src="bower_components/angular-animate/angular-animate.js"></script>
+	<script	src="bower_components/angular-material/angular-material.js"></script>
+	<script src="app.module.js"></script>
+	<script src="route-config.js"></script>
+	<script src="navigation/nav.controller.js"></script>
+	<script src="todo/todo.controller.js"></script>
+	<script src="todo/jsonservice.js"></script>
+	<script src="todo/todo.service.js"></script>
+	<script src="calculator/calculator.controller.js"></script>
+	<script src="calculator/calculator.service.js"></script>
+	<script src="xo/xo.service.js"></script>
+	<script src="xo/xo.controller.js"></script>
+	<script src="rss/rss.controller.js"></script>
+	<script src="rss/rss.service.js"></script>
+</body>
+</html>

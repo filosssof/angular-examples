@@ -1,0 +1,39 @@
+<div layout="row">
+	<div flex="40"></div>
+	<div layout="column">
+		<div layout="row">
+			<h1 class="md-display-2">XO game</h1>
+		</div>
+		<div layout="row">
+			<md-button ng-click="xo.newGame()">New Game</md-button>
+		</div>
+		<div layout="row">
+			<h2 class="md-display-1">{{xo.message}}</h2>
+		</div>
+	</div>
+	<div flex></div>
+</div>
+
+<div layout="row">
+	<div flex="40"></div>
+	<div flex="15" class="xo-container" layout="column">
+		<div layout="row">
+			<div class="cell p11" flex="33" ng-click="xo.clickCell(1)" ng-class="xo.pos.p1">{{xo.pos.p1}}</div>
+			<div class="cell p12" flex="33" ng-click="xo.clickCell(2)"	ng-class="xo.pos.p2">{{xo.pos.p2}}</div>
+			<div class="cell p13" flex ng-click="xo.clickCell(3)"		ng-class="xo.pos.p3">{{xo.pos.p3}}</div>
+		</div>
+
+		<div layout="row">
+			<div class="cell p21" flex="33" ng-click="xo.clickCell(4)"	ng-class="xo.pos.p4">{{xo.pos.p4}}</div>
+			<div class="cell p22 " flex="33" ng-click="xo.clickCell(5)"ng-class="xo.pos.p5">{{xo.pos.p5}}</div>
+			<div class="cell p23" flex ng-click="xo.clickCell(6)"		ng-class="xo.pos.p6">{{xo.pos.p6}}</div>
+		</div>
+
+		<div layout="row">
+			<div class="cell p31" flex="33" ng-click="xo.clickCell(7)" ng-class="xo.pos.p7">{{xo.pos.p7}}</div>
+			<div class="cell p32" flex="33" ng-click="xo.clickCell(8)"	ng-class="xo.pos.p8">{{xo.pos.p8}}</div>
+			<div class="cell p33" flex ng-click="xo.clickCell(9)"		ng-class="xo.pos.p9">{{xo.pos.p9}}</div>
+		</div>
+	</div>
+	<div flex></div>
+</div>
